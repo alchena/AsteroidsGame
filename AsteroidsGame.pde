@@ -4,6 +4,7 @@ public void setup() {
   size(500, 500);
   ship.setX(250);
   ship.setY(250);
+  frameRate(60);
 }
 
 public void draw() {
