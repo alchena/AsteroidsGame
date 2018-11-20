@@ -42,4 +42,8 @@ public void hyperSpace(){
 	ship.setDirectionX((double)0);
 	ship.setDirectionY((double)0);
 	ship.setPointDirection((int)(Math.random() * 360) + 1);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 70a47050362e62bc4c32ae2dc881930298bebf42

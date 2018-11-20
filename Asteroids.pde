@@ -38,4 +38,8 @@ class Asteroid extends Floater{
   	public double getDirectionY(){return myDirectionY;}   
   	public void setPointDirection(int degrees){myPointDirection = degrees;}   
   	public double getPointDirection(){return (double)myPointDirection;}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 70a47050362e62bc4c32ae2dc881930298bebf42
