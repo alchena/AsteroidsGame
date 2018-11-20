@@ -1,10 +1,14 @@
 Spaceship ship = new Spaceship();
 Star[] shinyStars = new Star [80];
+Asteroid[] movingAsteroids = new Asteroid [7];
 
 public void setup() {
   size(500, 500);
   for (int i = 0; i < shinyStars.length; i++){
   	shinyStars[i] = new Star();
+  }
+  for (int i = 0; i < movingAsteroids.length;i++){
+  	movingAsteroids[i] = new Asteroid();
   }
   ship.setX(250);
   ship.setY(250);
@@ -14,6 +18,10 @@ public void draw() {
   background(0);
   for (int i = 0; i < shinyStars.length; i++){
   	shinyStars[i].show();
+  }
+  for (int i = 0; i < movingAsteroids.length; i++){
+  	movingAsteroids[i].show();
+    movingAsteroids[i].move();
   }
   ship.show();
   ship.move();
@@ -35,4 +43,3 @@ public void hyperSpace(){
 	ship.setDirectionY((double)0);
 	ship.setPointDirection((int)(Math.random() * 360) + 1);
 }
-
