@@ -4,8 +4,6 @@ class Asteroid extends Floater{
   corners = 14;
     int[] xCoo = {0, 8, 13, 15, 14, 10, 0, -6, -8, -10, -11, -13, -12, -8}; 
     int[] yCoo = {11, 8, 3, 1, -2, -8, -14, -11, -8, -5, -3, 0, 1, 8}; 
-    xCorners = new int[corners];
-    yCorners = new int[corners];
     xCorners = xCoo;
     yCorners = yCoo;
     myCenterX = (int) (Math.random() * 480) + 10;
